@@ -9,7 +9,7 @@ Total LOC = 0 + 19 + 129 = 148
 
 Ciklomatska i kognitivna složenost za metodu Evaluate Expression:
 Ciklomatska složenost: E = 12, N = 10; CYC = 12 − 10 + 2=4
-Kognitivna složenost: Dva IF račvanja, dve petlje, jedan split + pozivanje na Calculate
+Kognitivna složenost: Dva IF račvanja, dve petlje, upucivanje na operations.tostring + pozivanje na Calculate metodu
 
 Ciklomatska i kognitivna složenost za metodu Calculate:
 Ciklomatska složenost: E = 12, N = 10; CYC = 12 − 10 + 2=4
