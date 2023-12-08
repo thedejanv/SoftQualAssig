@@ -8,9 +8,9 @@ File "Calculator.java" = 129 (brojao sam sve linije osim praznih i 5 zakomentari
 Total LOC = 0 + 19 + 129 = 148
 
 Ciklomatska i kognitivna složenost za metodu Evaluate Expression:
-Ciklomatska složenost: E = 12, N = 10; CYC = 12 − 10 + 2=4
-Kognitivna složenost: Dva IF račvanja, dve petlje, upucivanje na operations.tostring + pozivanje na Calculate metodu
+Ciklomatska složenost: E = 12, N = 10; CYC = 12 − 10 + 2 = 4
+Kognitivna složenost: Jedno if račvanje (i kasnije još dva "ugnježđena"), dve petlje, upućivanje na operations.tostring + pozivanje na Calculate metodu
 
 Ciklomatska i kognitivna složenost za metodu Calculate:
-Ciklomatska složenost: E = 12, N = 10; CYC = 12 − 10 + 2=4
-Kognitivna složenost: Dva IF račvanja, dve petlje, jedan split + pozivanje na Calculate
+Ciklomatska složenost: E = 15, N = 13; CYC = 15 − 13 + 2 = 4
+Kognitivna složenost: 7 IF račvanja (plus dva "ugnježđena")
