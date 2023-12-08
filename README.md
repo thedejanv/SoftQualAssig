@@ -15,7 +15,7 @@ Ciklomatska i kognitivna složenost za metodu Calculate:
 Ciklomatska složenost: E = 15, N = 13; CYC = 15 − 13 + 2 = 4
 Kognitivna složenost: 7 IF račvanja (plus dva "ugnježđena")
 
-Zapažanja za Calculator.java
+Zapažanja za fajl Calculator.java
 - Kao da su operacije (+, -, *, /) dva puta opisane
 - U slučaju greške, deluje da je poruka samo "Error" bez objašnjenja
 - -Verovatno je bolje toString umesto ToSTring
