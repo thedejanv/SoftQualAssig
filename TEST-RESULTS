@@ -1,4 +1,6 @@
+A. PRVI DEO ASSIGNMENTA
 Analiza u Sonarlintu fajla @Calculator.java":
+
 1. Metodu "ToString" treba preimenovati u skladu sa običajima da imena metoda počinju malim slovom i da bi se razlikovala od "toString", pogotovo što se kasnije i pojavljuje "toString".
 Testirao sam ime "throwToString" i radilo je, Sonarlint nije prijavljivao gresku.
 2. Metodu "Calculate" treba preimenovati u "calculate" konzistentno kroz ceo fajl.
@@ -10,7 +12,13 @@ public class Calculator {
         }
 5. POslednje "return" je suvišno.
 
-Jedinicni test, sintaksa:
+
+B. DRUGI DEO ASSIGNMENTA
+Jedinicni test
+Napravio sam sintaksu kao posebnu klasu "Proba". 
+Sve je proslo kako treba.
+
+Sintaksa:
 
 public class Proba {
 
