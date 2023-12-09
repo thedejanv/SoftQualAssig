@@ -37,7 +37,7 @@ public class Calculator {
             expression = 0 + expression;
         }
         // split expression by arithmetic operation to get all digits
-        String[] numbers = expression.split("[" + Operations.ToString() + "]");
+        String[] numbers = expression.split("[" + Operations.throwToString() + "]");
 
         // parse all operations
         List<String> operationList = new ArrayList<>();
