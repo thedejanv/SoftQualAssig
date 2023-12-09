@@ -10,3 +10,50 @@ public class Calculator {
         }
 5. POslednje "return" je suvišno.
 
+Jedinicni test, sintaksa:
+
+public class Proba {
+
+        public static void main(String[] args) {
+            testSabiranje();
+            testOduzimanje();
+            testMnozenje();
+            testDeljenje();
+            testViseopracija();
+            testDeljenjenulom();
+        }
+
+        private static void assertEquals(String expected, String actual) {
+            if (expected.equals(actual)) {
+                System.out.println("Proslo");
+            } else {
+                System.out.println("Nije proslo - Ocekivano: " + expected + ", Dobijeno " + actual);
+            }
+        }
+
+        private static void testSabiranje() {
+            assertEquals("7.0", Calculator.run("4+3"));
+        }
+
+        private static void testOduzimanje() {
+            assertEquals("4.0", Calculator.run("7-3"));
+        }
+
+        private static void testMnozenje() {
+            assertEquals("35.0", Calculator.run("7*5"));
+        }
+
+        private static void testDeljenje() {
+            assertEquals("3.5", Calculator.run("7/2"));
+        }
+
+        private static void testViseopracija() {
+            assertEquals("31.0", Calculator.run("7+5*5-1"));
+        }
+
+        private static void testDeljenjenulom() {
+            assertEquals("Infinity", Calculator.run("7/0"));
+        }
+
+   }
+
