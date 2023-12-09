@@ -16,7 +16,7 @@ public class Start {
 				scanIn.close();
 				active = false;
 			} else {
-				System.out.println(Calculator.Run(Expression));
+				System.out.println(Calculator.run(Expression));
 			}
 
 		}
