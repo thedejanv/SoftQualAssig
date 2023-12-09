@@ -3,6 +3,9 @@ import java.util.ArrayList;
 
 public class Calculator {
 
+    private Calculator () {
+        }
+
     static float finalResult;
 
     static class Operations {
@@ -21,7 +24,7 @@ public class Calculator {
 
     }
 
-    public static String Run(String expression) {
+    public static String run(String expression) {
         return evaluateExpression(expression);
     }
 
@@ -66,12 +69,12 @@ public class Calculator {
             }
         }
 
-        Calculate(numberList, operationList);
+        calculate(numberList, operationList);
         String textResult = Float.toString(finalResult);
         return textResult;
     }
 
-    private static void Calculate(List<Float> numbers, List<String> operations) {
+    private static void calculate(List<Float> numbers, List<String> operations) {
 
         if (numbers.size() == 1) {
             finalResult = numbers.get(0);
@@ -92,7 +95,7 @@ public class Calculator {
 
                 operations.remove(indexMultiply);
 
-                Calculate(numbers, operations);
+                calculate(numbers, operations);
                 return;
             } else {
                 result += numbers.get(indexDivide) / numbers.get(indexDivide + 1);
@@ -102,7 +105,7 @@ public class Calculator {
 
                 operations.remove(indexDivide);
 
-                Calculate(numbers, operations);
+                calculate(numbers, operations);
                 return;
             }
         }
@@ -115,7 +118,7 @@ public class Calculator {
 
             operations.remove(indexMultiply);
 
-            Calculate(numbers, operations);
+            calculate(numbers, operations);
             return;
         }
 
@@ -127,7 +130,7 @@ public class Calculator {
 
             operations.remove(indexDivide);
 
-            Calculate(numbers, operations);
+            calculate(numbers, operations);
             return;
         }
 
@@ -143,7 +146,7 @@ public class Calculator {
 
                 operations.remove(indexPlus);
 
-                Calculate(numbers, operations);
+                calculate(numbers, operations);
                 return;
             } else {
                 result += numbers.get(indexMinus) - numbers.get(indexMinus + 1);
@@ -153,7 +156,7 @@ public class Calculator {
 
                 operations.remove(indexMinus);
 
-                Calculate(numbers, operations);
+                calculate(numbers, operations);
                 return;
             }
 
@@ -167,7 +170,7 @@ public class Calculator {
 
             operations.remove(indexPlus);
 
-            Calculate(numbers, operations);
+            calculate(numbers, operations);
             return;
         }
 
@@ -179,9 +182,8 @@ public class Calculator {
 
             operations.remove(indexMinus);
 
-            Calculate(numbers, operations);
-            return;
-        }
+            calculate(numbers, operations);
+            }
 
     }
 
