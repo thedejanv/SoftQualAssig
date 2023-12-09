@@ -1,1 +1,12 @@
+Analiza u Sonar lintu fajla @Calculator.java":
+1. Metodu "ToString" treba preimenovati u skladu sa običajima da imena metoda počinju mali m slovom i da bi se razlikovala od "toString".
+Testirao sam ime "throwToString" i radilo je, SOnarlint nije prijavljivao gresku.
+2. Metodu "Calculate" treba preimenovati u "calculate" konzistentno kroz ceo fajl.
+3. Metodu "Run" treba preimenovai u "run" i u fajlu "Calculator" i u fajlu "Start"
+4. Sonarlint savetuje: "Utility classes should not have public constructors".
+Tako da sam ovako napravio:
+public class Calculator {
+        private Calculator () {
+        }
+5. POslednje "return" je suvišno.
 
